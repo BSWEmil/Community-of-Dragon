@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Discord Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Roboto', sans-serif; background: #0e0e0e; color: #fff; }
+    header { background: #5865F2; padding: 20px; text-align: center; }
+    header h1 { margin: 0; }
+    .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70vh; text-align: center; background: #2c2f33; }
+    .hero button { background: #7289DA; color: #fff; border: none; padding: 15px 30px; font-size: 18px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    .hero button:hover { background: #5b6eae; }
+    .stats, .news { padding: 40px 20px; text-align: center; }
+    .stat { font-size: 2em; margin: 20px 0; }
+    .news-item { background: #1e1f22; margin: 10px auto; padding: 15px; border-radius: 8px; max-width: 600px; }
+    footer { text-align: center; padding: 20px; background: #2c2f33; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Mein Discord Server 🌟</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Willkommen auf unserem Server!</h2>
+    <p>Trete unserer Community bei und hab Spaß!</p>
+    <button onclick="window.location.href='https://discord.gg/KqrDwpBxzZ';">Discord Beitreten</button>
+  </section>
+
+  <section class="stats">
+    <h2>Server-Statistiken</h2>
+    <div class="stat" id="memberCount">Mitglieder: 0</div>
+    <div class="stat" id="onlineCount">Online: 0</div>
+  </section>
+
+  <section class="news">
+    <h2>Neuigkeiten</h2>
+    <div class="news-item">Server gestartet! 🎉</div>
+    <div class="news-item">Event am Samstag! 🗓️</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mein Discord Server
+  </footer>
+
+  <script>
+    // Beispiel: Dynamische Statistiken (du brauchst einen Bot oder Discord API Key)
+    const memberCount = document.getElementById('memberCount');
+    const onlineCount = document.getElementById('onlineCount');
+
+    // Dummy-Daten, kannst du später durch echte API ersetzen
+    memberCount.innerText = "Mitglieder: 123";
+    onlineCount.innerText = "Online: 45";
+  </script>
+</body>
+</html>
+
